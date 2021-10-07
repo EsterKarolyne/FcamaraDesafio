@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+    <!-- slick -->
+
+    <script src="script.js"></script>
+
+    <title>MyProject</title>
+</head>
+
+<body>
+
+    <header class="containerHeader">
+
+        <h1 class="logo"><img class="logotipo" src="img/logotipo.png" alt=""></h1>
+
+        <div class="containerNav">
+            <a class="navHeader" href="#">Sobre</a>
+            <a class="navHeader" href="#">atuação</a>
+            <a class="navHeader" href="#">cases</a>
+            <a class="navHeader" href="#">carreira</a>
+            <a class="navHeader" href="#">contato</a>
+        </div>
+
+        <div id="tema" class="tema" onclick="TemaDark()">
+            <div class="iconTemaMoon"><i class="far fa-moon"></i></div>
+            <div class="iconTemaSun"><i class="far fa-sun"></i></div>
+        </div>
+
+    </header>
+
+    <section>
+
+        <div class="containerSection">
+
+            <div class="textoOne">
+
+                <h2>Home Office?</h2>
+                <p>Com a Pandemia da Covid-19, muita coisa mudou. O trabalho remoto foi necessário para aqueles que se comprometem com a vida. Porém, hoje com a vacinação em andamento, já podemos enxergar novas possibilidades, a reabertura da nossa empresa ja é possivel, no entanto,o trabalho remoto ja é uma realidade <strong>opcional</strong> por aqui! </p>
+                    
+            </div>
+
+            <div class="imgDiv">
+                <img class="imgOne" src="img/img1.svg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="sectionCarousel">
+        <h2 class="titleCarousel">Home Office ou Presencial? <br>Escolha o melhor para você!</h2>
+        <div class="carousel">
+            <div><img class="img-carousel" src="img/img3C.jpg" alt=""></div>
+            <div><img class="img-carousel" src="img/img2C.jpg" alt=""></div>
+            <div><img class="img-carousel" src="img/img1C.jpg" alt=""></div>
+            <div><img class="img-carousel" src="img/img4C.jpg" alt=""></div>
+          </div>
+        
+        <!-- slick -->
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+           <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+           <script src="script.js"></script>
+    </section>
+
+   <section>
+
+    <div class="containerRegras">
+
+        <div class="divImg2">
+            <img class="img2" src="img/img2.svg" alt="">
+        </div>
+
+        <div class="textTwo">
+            <h2>Quer comparecer presencialmente?</h2>
+            <p>
+                <li>Marque seu agendamento.</li>
+                <li>Escritórios: São Paulo (principal) e Santos (filial).</li>
+                <li>Horário ativo do escritório: 8h às 18h.</li>
+                <li>Uso de mascaras e distanciamento obrigatórios.</li>
+            </p>
+        </div>
+
+    </div>
+   </section>
+
+   <form class="sectionContainer" >
+        <div class="sectionAgendamento">
+            <div class="containerElements">
+                <h2>Agendamento</h2>
+                <div class="divElements" >Nome completo: <input type="text"></div>
+                <div class="divElements">CPF: <input type="number"><br></div>
+                <div class="divElements">Email: <input type="text"></div>
+                <div class="divElements">Escritório de preferencia: <input type="checkbox" name="" id=""> São Paulo <input type="checkbox" name="" id=""> Santos <br></div>
+                <div class="divElements">Data do comparecimento: <input type="date" name="" id=""></div>
+                <div class="divButton"><button type="submit" onclick="enviar()">Enviar</button></div>
+            </div>
+        </div>
+   </form>
+
+
+   <section>
+
+        <div class="titleContainerBox"><h2>Duvidas sobre o presencial</h2></div>
+
+       <div class="containerBox">
+           <div class="box">
+               <img class="imgBox" src="img/box1.svg" alt=""> 
+               <h2>Sintomas</h2>
+               <p class="textBox">Pessoas que estiverem sentindo algum sintoma não devem ir trabalhar presencialmente, a indicação é para que permaneçam em casa. </p>
+            </div>
+           <div class="box">
+               <img class="imgBox" src="img/box2.svg" alt="">
+               <h2>Segurança</h2>
+                <p class="textBox">Para a segurança de todos os escritórios só podem comportar até 40% dos consultores, conforme a legislação, e será medida também a temperatura ao chegar no escritório.</p>
+            </div>
+           <div class="box">
+               <img class="imgBox" src="img/box3.png" alt="">
+               <h2>Distanciamento</h2>
+               <p class="textBox">Nas mesas existem adesivos sinalizando onde os #SangueLaranjas devem sentar, para que haja o distanciamento necessário.</p>
+            </div>
+       </div>
+
+   </section>
+
+   <footer>
+       <div class="divFooter">
+           <div class="divFooterItems">
+               <h3>PRODUTO</h3>
+               <li>Explorar</li>
+               <li>Recursos</li>
+               <li>Criador</li>
+           </div>
+
+           <div class="divFooterItems">
+               <h3>EMPRESA</h3>
+               <li>Sobre</li>
+               <li>Termos de uso</li>
+           </div>
+
+           <div class="divFooterItems">
+               <h3>SUPORTE</h3>
+               <li>Central de Ajuda</li>
+               <li>Página de status</li>
+           </div>
+       </div>
+   </footer>
+
+</body>
+
+</html>
