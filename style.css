@@ -1,4 +1,3 @@
-/* cores: #DA63FF roxo #e2cfea #e0a500 amarelo #f9f9f9 brancodark #404443*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 
@@ -31,14 +30,35 @@ header{
     padding: 20px;
     align-items: center;
     box-shadow: 0px 1px 17px 0px rgb(239, 101, 60);
-    /* position: fixed;
-    top:0;
-    left: 0; */
+    position:sticky;
+    top: 0;
+    z-index: 9;
+    background-color:#f9f9f9;
+}
+
+.headerDesktop{
+    width:100%;
+    display:flex;
+}
+
+.headerMobile{
+    display:none;
+    margin-left: 0;
+}
+
+.icoMobile{
+    width:30px;
+    height:40px;
+    cursor: pointer;
+}
+
+.icoBotao{
+    border:none;
+    margin-left: 0;
 }
 
 .logotipo{
-    width: 90px;
-    
+    width: 90px; 
 }
 
 .containerNav{
@@ -76,6 +96,7 @@ a:hover{
     display:flex;
     border: 2px solid;
     width: 50px;
+    height:30px;
     border-radius: 15px;
     border-color: rgb(254, 68, 0);
     cursor: pointer;
@@ -107,6 +128,9 @@ a:hover{
     color: white;
 }
 
+.darkBody .containerHeader{
+    background-color: #404443;
+}
 /* dark mode ends*/
 
 
@@ -219,14 +243,13 @@ a:hover{
 
 /* agendamento */
 
+.sectionAgendamento{
+    display:flex;
+}
+
 .sectionContainer{
     margin: 60px;
 }
-
-/* .sectionAgendamento{
-    
-    
-} */
 
 .divElements{
     padding: 8px;
@@ -241,15 +264,17 @@ a:hover{
 }
 
 input{
-    height: 20px;
-    border-radius: 5px;
+    height: 28px;
+    border-radius: 10px;
+    /* border: none; */
+    border: 1px rgba(0, 0, 0, 0.507) solid ;
 }
 
 input:hover{
-    background-color:rgba(187, 63, 25, 0.356); 
+    background-color:rgba(175, 174, 173, 0.356); 
 }
 
-button{
+.botaoAgendar{
     width:90px;
     height:40px;
     border: none;
@@ -260,8 +285,13 @@ button{
     margin-left: 20px;
 }
 
-button:hover{
+.botaoAgendar:hover{
     background-color:rgb(254, 68, 0);
+}
+
+.imgChecklist{
+    width: 400px;
+
 }
 
 /*news boxes*/
@@ -348,11 +378,34 @@ footer{
 @media screen and (max-width:720px){
 
     header{
-        display: grid;
+        width:700px;
+        display:flex;
+        justify-content:left;
+    }
+
+    .containerHeader{
+        width:690;
+    }
+
+    .tema{
+        margin-left: 75px;
+        
+    }
+
+    .iconTemaSun{
+        width:25px;
+    }
+
+    .headerDesktop{
+        width: 0%;
     }
 
     .navHeader{
         font-size: 15px;
+    }
+
+    .containerNav{
+        width: 400px;
     }
 
     .containerSection{
@@ -402,8 +455,6 @@ footer{
 
     .containerRegras{
         display:grid;
-        
-        
     }
 
     .img2{
@@ -426,10 +477,12 @@ footer{
 
     .sectionContainer{
          margin-top: 20px;
+         display:grid;
+         justify-content: center;
     }
 
     .sectionAgendamento{
-       
+       display:grid;
         width:530px;
     }
 
@@ -495,6 +548,87 @@ footer{
 }
 
 @media screen and (max-width:375px){
+
+    .containerHeader{
+        width:370;
+    }
+
+    .headerDesktop{
+        display:none;
+    }
+
+    .headerMobile{
+        display:block;
+        justify-content: left;
+    }
+
+
+    .divMenuLogo{
+        display:flex;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .navHeader{
+        margin:0;
+    }
+
+    .divTema{
+        margin-left: 100px;
+    }
+
+    .menuMobile{
+        position:absolute;
+        display:block;
+        width:230px;
+        height:300px;
+        background-color:#f9f9f9;
+        left:-110%;
+        top: 80px;
+        display:grid;
+        justify-content: center;
+        transition-duration: 1s;
+    }
+
+    .darkBody .menuMobile{
+        background-color:#404443;
+    }
+
+    .darkBody .icoMobile{
+        background-color:#404443;
+    }
+
+    .darkBody .icoBotao{
+        background-color:#404443;
+    }
+
+    /* icone */
+
+    .darkBody .iconTemaMoon{
+        opacity: 1;
+        z-index: 9;
+        color: white;
+    }
+    
+    .darkBody div .iconTemaSun{
+        opacity: 0;
+        transition: 0.2s;
+    }
+
+    .icoMobile{
+       display:flex;
+       justify-content: left;
+    }
+
+    .icoBotao{
+        width: 40px;
+        background-color: #f9f9f9;
+    }
+
+    .logoMobile{
+        width: 90px;
+        margin-left: 5px;
+    }
 
     .containerSection{
         display:grid;
@@ -576,13 +710,14 @@ footer{
 
     .sectionContainer{
         margin:0;
-
+        display:grid;
     }
 
     .sectionAgendamento{
-        margin:0;
-        display:flexbox;
-        justify-content: right;
+        margin:0 auto;
+        width:96%;
+        display:grid;
+
     }
 
     .containerElements{
@@ -630,7 +765,7 @@ footer{
 
     .divFooter{
         margin:0 auto;
-        width:360px;
+        width:370px;
     }
 
     .divFooterItems{

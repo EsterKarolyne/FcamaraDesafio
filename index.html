@@ -22,24 +22,46 @@
 
     <header class="containerHeader">
 
-        <h1 class="logo"><img class="logotipo" src="img/logotipo.png" alt=""></h1>
-
-        <div class="containerNav">
-            <a class="navHeader" href="#">Sobre</a>
-            <a class="navHeader" href="#">atuação</a>
-            <a class="navHeader" href="#">cases</a>
-            <a class="navHeader" href="#">carreira</a>
-            <a class="navHeader" href="#">contato</a>
+        <div class="headerDesktop">
+            <h1 class="logo"><img class="logotipo" src="img/logotipo.png" alt=""></h1>
+            <div class="containerNav">
+                <a class="navHeader" href="#home">Home</a>
+                <a class="navHeader" href="#atuacao">atuação</a>
+                <a class="navHeader" href="#regras">Regras</a>
+                <a class="navHeader" href="#agendar">Agendar</a>
+                <a class="navHeader" href="#duvidas">Duvidas</a>
+            </div>
+            <div id="tema" class="tema" onclick="TemaDark()">
+                <div class="iconTemaMoon"><i class="far fa-moon"></i></div>
+                <div class="iconTemaSun"><i class="far fa-sun"></i></div>
+            </div>
         </div>
 
-        <div id="tema" class="tema" onclick="TemaDark()">
-            <div class="iconTemaMoon"><i class="far fa-moon"></i></div>
-            <div class="iconTemaSun"><i class="far fa-sun"></i></div>
+        <div class="headerMobile">
+            <div class="divMenuLogo">
+                <button onclick="openMenu()" class="icoBotao">
+                    <img class="icoMobile" src="img/icon1.ico" alt="">
+                </button>
+                <div><img class="logoMobile" src="img/logotipo.png" alt=""></div>
+                <div class="divTema">
+                    <div id="tema" class="tema" onclick="TemaDark()">
+                        <div class="iconTemaMoon"><i class="far fa-moon"></i></div>
+                        <div class="iconTemaSun"><i class="far fa-sun"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div id="menuMobile" class="menuMobile">
+                <a class="navHeader" href="#home">Home</a>
+                <a class="navHeader" href="#atuacao">atuação</a>
+                <a class="navHeader" href="#regras">Regras</a>
+                <a class="navHeader" href="#agendar">Agendar</a>
+                <a class="navHeader" href="#duvidas">Duvidas</a>
+            </div>
         </div>
 
     </header>
 
-    <section>
+    <section id="home">
 
         <div class="containerSection">
 
@@ -59,7 +81,7 @@
     </section>
 
 
-    <section class="sectionCarousel">
+    <section id="atuacao" class="sectionCarousel">
         <h2 class="titleCarousel">Home Office ou Presencial? <br>Escolha o melhor para você!</h2>
         <div class="carousel">
             <div><img class="img-carousel" src="img/img3C.jpg" alt=""></div>
@@ -75,7 +97,7 @@
            <script src="script.js"></script>
     </section>
 
-   <section>
+   <section id="regras">
 
     <div class="containerRegras">
 
@@ -96,22 +118,27 @@
     </div>
    </section>
 
-   <form class="sectionContainer" >
+   <form class="sectionContainer" id="agendar">
         <div class="sectionAgendamento">
             <div class="containerElements">
                 <h2>Agendamento</h2>
-                <div class="divElements" >Nome completo: <input type="text"></div>
-                <div class="divElements">CPF: <input type="number"><br></div>
-                <div class="divElements">Email: <input type="text"></div>
-                <div class="divElements">Escritório de preferencia: <input type="checkbox" name="" id=""> São Paulo <input type="checkbox" name="" id=""> Santos <br></div>
-                <div class="divElements">Data do comparecimento: <input type="date" name="" id=""></div>
-                <div class="divButton"><button type="submit" onclick="enviar()">Enviar</button></div>
+                <div>
+                    <div class="divElements" >Nome completo:  <input type="text"></div>
+                    <div class="divElements">CPF:  <input type="number"><br></div>
+                </div>
+                <div class="divElements">Email:  <input type="email"></div>
+                <div class="divElements">Escritório de preferência:  <input type="checkbox" name="" id=""> São Paulo <input type="checkbox" name="" id=""> Santos <br></div>
+                <div class="divElements">Data do comparecimento:  <input type="date" name="" id=""></div>
+                <div class="divButton"><button class="botaoAgendar" type="submit" onclick="enviar()">Enviar</button></div>
             </div>
+
+            <div><img class="imgChecklist" src="img/Checklist.png" alt=""></div>
+
         </div>
    </form>
 
 
-   <section>
+   <section id="duvidas">
 
         <div class="titleContainerBox"><h2>Duvidas sobre o presencial</h2></div>
 
