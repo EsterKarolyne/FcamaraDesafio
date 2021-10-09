@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 
 
@@ -20,7 +19,6 @@
 body{
     background-color: #f9f9f9;
     font-family: 'Poppins', sans-serif;
-    /* overflow-x: hidden; */
 }
 
 /* header */
@@ -39,33 +37,6 @@ header{
 .headerDesktop{
     width:100%;
     display:flex;
-}
-
-.headerMobile{
-    display:none;
-    margin-left: 0;
-}
-
-.icoMobile{
-    width:30px;
-    height:40px;
-    cursor: pointer;
-}
-
-.icoBotao{
-    border:none;
-    margin-left: 0;
-}
-
-.logotipo{
-    width: 90px; 
-}
-
-.containerNav{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 5%;
 }
 
 h1{
@@ -92,6 +63,18 @@ a:hover{
     background-color:  rgb(239, 101, 60);
 }
 
+
+.logotipo{
+    width: 90px; 
+}
+
+.containerNav{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
 .tema{
     display:flex;
     border: 2px solid;
@@ -109,6 +92,28 @@ a:hover{
 }
 
 /* header ends */
+
+
+/* header mobile */
+
+.headerMobile{
+    display:none;
+    margin-left: 0;
+}
+
+.icoBotao{
+    border:none;
+    margin-left: 0;
+}
+
+.icoMobile{
+    width:30px;
+    height:40px;
+    cursor: pointer;
+}
+
+/* header mobile ends */
+
 
 /* dark mode */
 .dark .iconTemaMoon{
@@ -171,18 +176,12 @@ a:hover{
 /* home ends*/
 
 
-/* carousel */
+/* carousel / atuação */
 
 .titleCarousel{
     margin-top: 50px;
     text-align: center;
     color: rgb(254, 68, 0);
-}
-
-.img-carousel{
-    width: 1200px;
-    height: 550px;
-    margin: 0 auto;   
 }
 
 .carousel{
@@ -191,9 +190,16 @@ a:hover{
     margin-top: 50px;
 }
 
-/* carousel ends */
+.img-carousel{
+    width: 1200px;
+    height: 550px;
+    margin: 0 auto;   
+}
 
-/* media */
+
+/* carousel / atuação  ends */
+
+/* regras */
 
 .containerRegras{
     margin-top: 100px;
@@ -239,16 +245,21 @@ a:hover{
     border-radius: 0 45px 0 45px;  
 }
 
-/* media ends */
+/* regras ends */
 
-/* agendamento */
+/* form agendamento */
+
+.sectionContainer{
+    margin: 60px;
+}
 
 .sectionAgendamento{
     display:flex;
 }
 
-.sectionContainer{
-    margin: 60px;
+.containerElements h2{
+    color: rgb(254, 68, 0);
+    font-size: 30px;
 }
 
 .divElements{
@@ -256,11 +267,6 @@ a:hover{
     margin:10px;
     font-size: 23px;
     
-}
-
-.containerElements h2{
-    color: rgb(254, 68, 0);
-    font-size: 30px;
 }
 
 input{
@@ -291,10 +297,11 @@ input:hover{
 
 .imgChecklist{
     width: 400px;
-
 }
 
-/*news boxes*/
+/* form agendamendo ends */
+
+/*duvidas*/
 
 .titleContainerBox{
     margin-top: 30px;
@@ -343,7 +350,7 @@ input:hover{
     font-size: 15px;
 }
 
-/*news boxes ends*/
+/*duvidas ends*/
 
 /* footer */
 
@@ -363,17 +370,18 @@ footer{
     
 }
 
-.divFooter li{
-    font-size:12px;
-}
-
 .divFooterItems{
     padding-bottom: 5px;
+}
+
+.divFooter li{
+    font-size:12px;
 }
 
 /* footer ends*/
 
 /* Responsivo */
+
 
 @media screen and (max-width:720px){
 
@@ -387,6 +395,18 @@ footer{
         width:690;
     }
 
+    .headerDesktop{
+        width: 0%;
+    }
+
+    .containerNav{
+        width: 400px;
+    }
+
+    .navHeader{
+        font-size: 15px;
+    }
+
     .tema{
         margin-left: 75px;
         
@@ -396,26 +416,18 @@ footer{
         width:25px;
     }
 
-    .headerDesktop{
-        width: 0%;
-    }
-
-    .navHeader{
-        font-size: 15px;
-    }
-
-    .containerNav{
-        width: 400px;
-    }
+    /* ------- */
 
     .containerSection{
         display:grid;
-        width:650px;
+        margin:20px;
     }
 
-    .textoOne{
-        width:500px;
-        margin-bottom: 30px;
+    .textoOne {
+        margin-bottom: 20px;
+        width:93%;
+        max-width: 98%;
+        margin:20px 0 20px 20px;
     }
 
     .imgDiv{
@@ -429,28 +441,29 @@ footer{
     }
 
     /* ----------- */
+
     .sectionCarousel{
         margin-top: 30px;
         width:700px;
-        margin:center;
+        ;
     }
 
     .titleCarousel{
-        margin: 0;
+        margin: 0 0 20px 0;
         padding:0;
-        margin:center;
     }
 
     .carousel{
         width:600px;
-        margin: center;
+        margin: 0 auto;
     }
 
     .img-carousel{
-        width:530px;
+        width:535px;
         height: 400px;
-        margin:0;
+        margin:0 auto;
     }
+
     /* ------------------ */
 
     .containerRegras{
@@ -489,16 +502,11 @@ footer{
     .containerElements h2{
         font-size:25px;
         text-align:center;
-        
         margin-bottom: 20px;
     }
 
     .divElements{
         font-size: 15px;
-    }
-
-    button{
-        margin:center;
     }
 
     /* ---------------------- */
@@ -531,7 +539,6 @@ footer{
         width:600px;
         margin:0 auto;
         margin-bottom: 70px;
-
     }
 
     .divFooter{
@@ -541,16 +548,18 @@ footer{
 
     .divFooterItems{
         width:500px;        
-
     }
-
 
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:376px){
 
     .containerHeader{
-        width:370;
+        width:100%;
+        padding:0;
+        height:65px;
+        display:flex;
+        justify-content:center;
     }
 
     .headerDesktop{
@@ -558,6 +567,7 @@ footer{
     }
 
     .headerMobile{
+        margin: 0 auto;
         display:block;
         justify-content: left;
     }
@@ -569,25 +579,40 @@ footer{
         margin-left: 0px;
     }
 
-    .navHeader{
-        margin:0;
+    .icoBotao{
+        width: 40px;
+        background-color: #f9f9f9;
+    }
+
+    .icoMobile{
+       display:flex;
+       justify-content: left;
+    }
+
+    
+    .logoMobile{
+        width: 90px;
+        margin-left: 5px;
     }
 
     .divTema{
         margin-left: 100px;
     }
 
-    .menuMobile{
+     .menuMobile{
         position:absolute;
         display:block;
         width:230px;
-        height:300px;
         background-color:#f9f9f9;
         left:-110%;
-        top: 80px;
+        top:100%;
         display:grid;
         justify-content: center;
         transition-duration: 1s;
+    }
+
+    .navHeader{
+        margin:0;
     }
 
     .darkBody .menuMobile{
@@ -602,8 +627,6 @@ footer{
         background-color:#404443;
     }
 
-    /* icone */
-
     .darkBody .iconTemaMoon{
         opacity: 1;
         z-index: 9;
@@ -615,36 +638,26 @@ footer{
         transition: 0.2s;
     }
 
-    .icoMobile{
-       display:flex;
-       justify-content: left;
-    }
-
-    .icoBotao{
-        width: 40px;
-        background-color: #f9f9f9;
-    }
-
-    .logoMobile{
-        width: 90px;
-        margin-left: 5px;
-    }
+    /* ----------------- */
 
     .containerSection{
         display:grid;
         justify-content: center;
-        width:360px;
-        padding:5px;
+        width:100%;
+        max-width: 98%;
+        margin: 0 auto;
+        padding:5px;       
+        margin-bottom: 30px;
+
     }
 
     .textoOne{
-        width:360px;
-        margin-bottom: 30px;
         font-size: 15px;
     }
 
     .imgDiv{
-        width: 320px;
+        width: 98%;
+        margin: 0 auto;
         margin:0 auto;
     }
 
@@ -654,16 +667,16 @@ footer{
     }
 
     /* ----------- */
+
     .sectionCarousel{
         margin-top: 30px;
         width:370px;
-        margin:center;
     }
 
     .titleCarousel{
         margin: 0;
         padding:0;
-        margin:center;
+        ;
     }
 
     .carousel{
@@ -676,11 +689,11 @@ footer{
         height: 300px;
         margin:0;
     }
+
     /* ------------------ */
 
     .containerRegras{
         display:grid;
-        
     }
 
     .divImg2{
@@ -689,12 +702,14 @@ footer{
 
     .img2{
         width:330px;
-        
+        margin: 0 auto;
     }
 
     .textTwo{
         margin-top: 30px;
         width: 350px;
+        padding:0;
+        margin:0 auto;
     }
 
     .textTwo h2{
@@ -702,7 +717,6 @@ footer{
     }
 
     .textTwo p{
-        
         margin:5px;
     }
 
@@ -711,13 +725,14 @@ footer{
     .sectionContainer{
         margin:0;
         display:grid;
+        max-width:98%;
+        margin: 0 auto;
     }
 
     .sectionAgendamento{
-        margin:0 auto;
-        width:96%;
+        max-width:fit-content;
+        width:100%;
         display:grid;
-
     }
 
     .containerElements{
@@ -729,11 +744,22 @@ footer{
     }
 
     .divElements{
-        width:360px;
+        max-width:fit-content;
+        padding: 0;
+        margin: 0;
     }
 
+    .imgChecklist{
+        max-width:98%;
+        margin:0 auto;
+    }
+    
     /* ---------------------- */
 
+    .titleContainerBox{
+        max-width:98%;
+        margin:0 auto;
+    }
     .box{
         width: 330px;
         height: 390px;
@@ -756,7 +782,7 @@ footer{
     /* ------------------ */
 
     footer{
-        width:375px;
+        width:100%;
         height:100px;
         margin:0 auto;
         margin-bottom:0px;
@@ -765,13 +791,18 @@ footer{
 
     .divFooter{
         margin:0 auto;
-        width:370px;
+        max-width:98%;
+        margin: 0 auto;
+        padding:0;
     }
 
     .divFooterItems{
         font-size:10px;
-        
+        max-width: fit-content;
+        margin:0 auto;
+        padding:0;
+
     }
 
-
 }
+

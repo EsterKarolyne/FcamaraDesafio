@@ -12,9 +12,7 @@ function openMenu(){
         isOpen = false
     }
     
-
 }
-
 
 function TemaDark(){
     var divTheme = document.getElementById("tema")
@@ -24,7 +22,7 @@ function TemaDark(){
 
 $(".carousel").slick({
     dots: true,
-    arrows: true,
+    arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
