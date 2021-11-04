@@ -15,7 +15,7 @@
 
     <script src="script.js"></script>
 
-    <title>teste</title>
+    <title>MyProject</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
     <header class="containerHeader">
 
         <div class="headerDesktop">
-            <h1 class="logo"><img class="logotipo" src="img/logotipo.png" alt=""></h1>
+            <h1 class="logo"><i class="fas fa-syringe"></i></h1>
             <div class="containerNav">
                 <a class="navHeader" href="#home">Home</a>
                 <a class="navHeader" href="#atuacao">atuação</a>
@@ -68,12 +68,15 @@
             <div class="textoOne">
 
                 <h2>Home Office?</h2>
-                <p>Com a Pandemia da Covid-19, muita coisa mudou. O trabalho remoto foi necessário para aqueles que se comprometem com a vida. Porém, hoje com a vacinação em andamento, já podemos enxergar novas possibilidades, a reabertura da nossa empresa ja é possivel, no entanto,o trabalho remoto ja é uma realidade <strong>opcional</strong> por aqui! </p>
-                    
+                <p>Com a Pandemia da Covid-19, muita coisa mudou. O trabalho remoto foi necessário para aqueles que se
+                    comprometem com a vida. Porém, hoje com a vacinação em andamento, já podemos enxergar novas
+                    possibilidades, a reabertura da nossa empresa ja é possivel, no entanto,o trabalho remoto ja é uma
+                    realidade <strong>opcional</strong> por aqui! </p>
+
             </div>
 
             <div class="imgDiv">
-                <img class="imgOne" src="img/img1.svg" alt="">
+                <img class="imgOne" src="img/Imagem1.svg" alt="dev-code">
             </div>
 
         </div>
@@ -88,102 +91,118 @@
             <div><img class="img-carousel" src="img/img2C.jpg" alt=""></div>
             <div><img class="img-carousel" src="img/img1C.jpg" alt=""></div>
             <div><img class="img-carousel" src="img/img4C.jpg" alt=""></div>
-          </div>
-        
+        </div>
+
         <!-- slick -->
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-           <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-           <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
-           <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+        <script src="script.js"></script>
     </section>
 
-   <section id="regras">
+    <section id="regras">
 
-    <div class="containerRegras">
+        <div class="containerRegras">
 
-        <div class="divImg2">
-            <img class="img2" src="img/img2.svg" alt="">
+            <div class="divImg2">
+                <img class="img2" src="img/imagem2.svg" alt="">
+            </div>
+
+            <div class="textTwo">
+                <h2>Quer comparecer presencialmente?</h2>
+                <p>
+                    <li>Marque seu agendamento.</li>
+                    <li>Escritórios: Rio de Janeiro e São Paulo.</li>
+                    <li>Horário ativo do escritório: 9h às 18h.</li>
+                    <li>Uso de mascaras e distanciamento obrigatórios.</li>
+                </p>
+            </div>
+
         </div>
+    </section>
 
-        <div class="textTwo">
-            <h2>Quer comparecer presencialmente?</h2>
-            <p>
-                <li>Marque seu agendamento.</li>
-                <li>Escritórios: São Paulo (principal) e Santos (filial).</li>
-                <li>Horário ativo do escritório: 8h às 18h.</li>
-                <li>Uso de mascaras e distanciamento obrigatórios.</li>
-            </p>
-        </div>
-
-    </div>
-   </section>
-
-   <form class="sectionContainer" id="agendar">
+    <form class="sectionContainer" id="agendar">
         <div class="sectionAgendamento">
             <div class="containerElements">
                 <h2>Agendamento</h2>
                 <div>
-                    <div class="divElements" >Nome completo:  <input type="text"></div>
-                    <div class="divElements">CPF:  <input type="number"><br></div>
+                    <div class="divElements">Nome completo: <input type="text"></div>
+                    <div class="divElements">CPF: <input type="number"><br></div>
                 </div>
-                <div class="divElements">Email:  <input type="email"></div>
-                <div class="divElements">Escritório de preferência:  <input type="checkbox" name="" id=""> São Paulo <input type="checkbox" name="" id=""> Santos <br></div>
-                <div class="divElements">Data do comparecimento:  <input type="date" name="" id=""></div>
-                <div class="divButton"><button class="botaoAgendar" type="submit" onclick="enviar()">Enviar</button></div>
+                <div class="divElements">Email: <input type="email"></div>
+                <div class="divLocal divElements"><p>Escritório de preferência:</p>
+                    <div class="boxLocal">
+                        <label for="localSP">São Paulo</label> 
+                        <input id="localSP" class="checkLocal" type="checkbox">
+                    </div>
+                    <div class="boxLocal">
+                        <label for="localRJ">Rio de Janeiro</label>
+                        <input id="localRJ" class="checkLocal" type="checkbox"><br>
+                    </div>
+                </div>
+                    
+                <div class="divElements">Data do comparecimento: <input type="date" ></div>
+                <div class="divButton"><button class="botaoAgendar" type="submit" onclick="enviar()">Enviar</button>
+                </div>
             </div>
 
-            <div><img class="imgChecklist" src="img/Checklist.png" alt=""></div>
+            <div><img class="imgChecklist" src="img/Checklist-bro.svg" alt=""></div>
 
         </div>
-   </form>
+    </form>
 
 
-   <section id="duvidas">
+    <section id="duvidas">
 
-        <div class="titleContainerBox"><h2>Duvidas sobre o presencial</h2></div>
+        <div class="titleContainerBox">
+            <h2>Duvidas sobre o presencial</h2>
+        </div>
 
-       <div class="containerBox">
-           <div class="box">
-               <img class="imgBox" src="img/box1.svg" alt=""> 
-               <h2>Sintomas</h2>
-               <p class="textBox">Pessoas que estiverem sentindo algum sintoma não devem ir trabalhar presencialmente, a indicação é para que permaneçam em casa. </p>
+        <div class="containerBox">
+            <div class="box">
+                <img class="imgBox" src="img/card1.svg" alt="doctor">
+                <h2>Sintomas</h2>
+                <p class="textBox">Pessoas que estiverem sentindo algum sintoma não devem ir trabalhar presencialmente,
+                    a indicação é para que permaneçam em casa. </p>
             </div>
-           <div class="box">
-               <img class="imgBox" src="img/box2.svg" alt="">
-               <h2>Segurança</h2>
-                <p class="textBox">Para a segurança de todos os escritórios só podem comportar até 40% dos consultores, conforme a legislação, e será medida também a temperatura ao chegar no escritório.</p>
+            <div class="box">
+                <img class="imgBox" src="img/card2.svg" alt="people with mask">
+                <h2>Segurança</h2>
+                <p class="textBox">Para a segurança de todos os escritórios só podem comportar até 40% dos consultores,
+                    conforme a legislação, e será medida também a temperatura ao chegar no escritório.</p>
             </div>
-           <div class="box">
-               <img class="imgBox" src="img/box3.png" alt="">
-               <h2>Distanciamento</h2>
-               <p class="textBox">Nas mesas existem adesivos sinalizando onde os #SangueLaranjas devem sentar, para que haja o distanciamento necessário.</p>
+            <div class="box">
+                <img class="imgBox" src="img/card3.svg" alt="social distance">
+                <h2>Distanciamento</h2>
+                <p class="textBox">Nas mesas existem adesivos sinalizando onde as pessoas devem sentar, para que haja o
+                    distanciamento necessário.</p>
             </div>
-       </div>
+        </div>
 
-   </section>
+    </section>
 
-   <footer>
-       <div class="divFooter">
-           <div class="divFooterItems">
-               <h3>PRODUTO</h3>
-               <li>Explorar</li>
-               <li>Recursos</li>
-               <li>Criador</li>
-           </div>
+    <footer>
+        <div class="divFooter">
+            <div class="divFooterItems">
+                <h3>PRODUTO</h3>
+                <li>Explorar</li>
+                <li>Recursos</li>
+                <li>Criador</li>
+            </div>
 
-           <div class="divFooterItems">
-               <h3>EMPRESA</h3>
-               <li>Sobre</li>
-               <li>Termos de uso</li>
-           </div>
+            <div class="divFooterItems">
+                <h3>EMPRESA</h3>
+                <li>Sobre</li>
+                <li>Termos de uso</li>
+            </div>
 
-           <div class="divFooterItems">
-               <h3>SUPORTE</h3>
-               <li>Central de Ajuda</li>
-               <li>Página de status</li>
-           </div>
-       </div>
-   </footer>
+            <div class="divFooterItems">
+                <h3>SUPORTE</h3>
+                <li>Central de Ajuda</li>
+                <li>Página de status</li>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

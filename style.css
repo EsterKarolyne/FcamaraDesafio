@@ -12,7 +12,7 @@
 }
 
 *::selection{
-    background: rgb(239, 101, 60) ;
+    background: #007ea7; ;
     color:#fff;
 }
 
@@ -27,7 +27,7 @@ header{
     display: flex;
     padding: 20px;
     align-items: center;
-    box-shadow: 0px 1px 17px 0px rgb(239, 101, 60);
+    box-shadow: 0px 1px 17px 0px #007ea7;
     position:sticky;
     top: 0;
     z-index: 9;
@@ -42,7 +42,7 @@ header{
 h1{
     font-size: 35px;
     font-family: Daily;
-    color: rgb(254, 68, 0);
+    color: #007ea7;
     letter-spacing:1.5px;
     margin-left: 30px;
 }
@@ -60,7 +60,7 @@ a{
 }
 
 a:hover{
-    background-color:  rgb(239, 101, 60);
+    background-color:  #007ea7;
 }
 
 
@@ -81,7 +81,7 @@ a:hover{
     width: 50px;
     height:30px;
     border-radius: 15px;
-    border-color: rgb(254, 68, 0);
+    border-color: #007ea7;
     cursor: pointer;
     transition: 0.2s; 
 }
@@ -153,7 +153,7 @@ a:hover{
 .textoOne h2{
     font-size: 50px;
     font-family: Daily;
-    color: rgb(254, 68, 0);
+    color: #007ea7;
 }
 
 .textoOne p{
@@ -181,7 +181,7 @@ a:hover{
 .titleCarousel{
     margin-top: 50px;
     text-align: center;
-    color: rgb(254, 68, 0);
+    color: #007ea7;;
 }
 
 .carousel{
@@ -230,7 +230,7 @@ a:hover{
 }
 
 .textTwo h2{
-    color:rgb(254, 68, 0);
+    color:#007ea7;
 }
 
 .textTwo p{
@@ -240,7 +240,7 @@ a:hover{
 }
 
 .textTwo:hover{
-    background-color: rgba(239, 102, 60, 0.459);
+    background-color: #007da756;
     transform:scale(1.2);
     border-radius: 0 45px 0 45px;  
 }
@@ -258,7 +258,7 @@ a:hover{
 }
 
 .containerElements h2{
-    color: rgb(254, 68, 0);
+    color: #007ea7;
     font-size: 30px;
 }
 
@@ -269,11 +269,29 @@ a:hover{
     
 }
 
+.divLocal{
+    display: flex;
+}
+
 input{
     height: 28px;
     border-radius: 10px;
     /* border: none; */
     border: 1px rgba(0, 0, 0, 0.507) solid ;
+}
+
+.checkLocal{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.boxLocal{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+
 }
 
 input:hover{
@@ -284,7 +302,7 @@ input:hover{
     width:90px;
     height:40px;
     border: none;
-    background-color:rgb(239, 101, 60);
+    background-color:#007ea7;;
     color: white;
     border-radius:20px;
     cursor: pointer;
@@ -292,7 +310,7 @@ input:hover{
 }
 
 .botaoAgendar:hover{
-    background-color:rgb(254, 68, 0);
+    background-color:#007ea7;;
 }
 
 .imgChecklist{
@@ -309,7 +327,7 @@ input:hover{
 }
 
 .titleContainerBox h2{
-    color: rgb(254, 68, 0);
+    color: #007ea7;
     font-family:Daily;
     font-size: 40px;
     letter-spacing: 1px;
@@ -325,7 +343,7 @@ input:hover{
 .box{
     width: 350px;
     height: 450px;
-    box-shadow: 0px 1px 17px 0px rgb(239, 101, 60);
+    box-shadow: 0px 1px 17px 0px #007ea7;
     margin:20px;
     transition: transform .3s ease-in-out;
 }
@@ -355,7 +373,7 @@ input:hover{
 /* footer */
 
 footer{
-    background-color: rgb(254, 68, 0);
+    background-color: #007ea7;
     width:90%;
     height:98px;
     margin:0 auto;
